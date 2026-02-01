@@ -1,9 +1,14 @@
 // backend/server.js
 // オタクニュースアプリ - バックエンドAPI
 
+const app = express();
 const express = require('express');
 const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
+
+// 環境変数のデバッグ
+console.log('SUPABASE_URL:', process.env.SUPABASE_URL);
+console.log('SUPABASE_ANON_KEY:', process.env.SUPABASE_ANON_KEY ? 'SET' : 'NOT SET');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
