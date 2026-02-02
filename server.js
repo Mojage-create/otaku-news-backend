@@ -10,7 +10,6 @@ const { createClient } = require('@supabase/supabase-js');
 console.log('SUPABASE_URL:', process.env.SUPABASE_URL);
 console.log('SUPABASE_ANON_KEY:', process.env.SUPABASE_ANON_KEY ? 'SET' : 'NOT SET');
 
-const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Supabaseクライアント初期化
