@@ -1,8 +1,8 @@
 // backend/server.js
 // オタクニュースアプリ - バックエンドAPI
 
-const app = express();
 const express = require('express');
+const app = express();
 const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
 
